@@ -1,4 +1,4 @@
-package SingletoneTest;
+package testingGoogleSearch;
 
 import java.io.IOException;
 import java.util.List;
@@ -14,6 +14,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 
 public class TestSearching {
 	@BeforeClass
@@ -56,12 +57,12 @@ public class TestSearching {
       WebDriverWait w = new WebDriverWait(TestBase.driver, 5);
       w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul")));
       p.submit();
-	  WebElement element = TestBase.driver.findElement(By.className(Constants.percentageDiv));
+	  WebElement element = TestBase.driver.findElement(By.xpath(Constants.percentageDiv));
 	  TestBase.actions.moveToElement(element);
 	  TestBase.actions.perform();
 	  //Checking whether % signs will redirect to 404 ERROR
    	  Assert.assertEquals(TestBase.driver.
-   			  findElement(By.className(Constants.percentageDiv)).
+   			  findElement(By.xpath(Constants.percentageDiv)).
    			  isDisplayed(),true);
   }
   
@@ -104,7 +105,7 @@ public class TestSearching {
 	  }
 	  
 	  Assert.assertEquals(TestBase.driver.
-			  findElement(By.xpath(Constants.instabugLogo)).
+			  findElement(By.xpath(Constants.instabugDiv)).
 			  isDisplayed(),true);
 
 	 }

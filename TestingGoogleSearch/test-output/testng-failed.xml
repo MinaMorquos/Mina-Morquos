@@ -5,9 +5,9 @@
     <classes>
       <class name="SingletoneTest.TestSearching">
         <methods>
+          <include name="percentageSignTest" invocation-numbers="0"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="verifyGoogleAutoSuggestions" invocation-numbers="0"/>
         </methods>
       </class> <!-- SingletoneTest.TestSearching -->
     </classes>

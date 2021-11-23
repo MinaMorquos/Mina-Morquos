@@ -1,4 +1,4 @@
-package SingletoneTest;
+package testingGoogleSearch;
 
 import java.io.File;
 import java.io.IOException;

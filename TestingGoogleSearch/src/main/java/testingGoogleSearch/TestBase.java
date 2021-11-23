@@ -1,4 +1,4 @@
-package SingletoneTest;
+package testingGoogleSearch;
 
 import java.util.concurrent.TimeUnit;
 
