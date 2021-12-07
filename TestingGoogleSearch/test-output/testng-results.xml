@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-23T05:16:01Z" name="Default suite" finished-at="2021-11-23T05:16:16Z" duration-ms="15034">
+  <suite started-at="2021-12-07T17:14:02Z" name="Default suite" finished-at="2021-12-07T17:14:16Z" duration-ms="14129">
     <groups>
     </groups>
-    <test started-at="2021-11-23T05:16:01Z" name="Default test" finished-at="2021-11-23T05:16:16Z" duration-ms="15034">
+    <test started-at="2021-12-07T17:14:02Z" name="Default test" finished-at="2021-12-07T17:14:16Z" duration-ms="14129">
       <class name="testingGoogleSearch.TestSearching">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testingGoogleSearch.TestSearching@225129c]" started-at="2021-11-23T05:16:01Z" name="setup" finished-at="2021-11-23T05:16:06Z" duration-ms="4517" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testingGoogleSearch.TestSearching@225129c]" started-at="2021-12-07T17:14:02Z" name="setup" finished-at="2021-12-07T17:14:08Z" duration-ms="6387" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyGoogleTitle()[pri:1, instance:testingGoogleSearch.TestSearching@225129c]" started-at="2021-11-23T05:16:06Z" name="verifyGoogleTitle" finished-at="2021-11-23T05:16:06Z" duration-ms="15" status="PASS">
+        <test-method signature="verifyGoogleTitle()[pri:1, instance:testingGoogleSearch.TestSearching@225129c]" started-at="2021-12-07T17:14:08Z" name="verifyGoogleTitle" finished-at="2021-12-07T17:14:08Z" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGoogleTitle -->
-        <test-method signature="verifyGoogleEmptySearch()[pri:2, instance:testingGoogleSearch.TestSearching@225129c]" started-at="2021-11-23T05:16:06Z" name="verifyGoogleEmptySearch" finished-at="2021-11-23T05:16:06Z" duration-ms="129" status="PASS">
+        <test-method signature="verifyGoogleEmptySearch()[pri:2, instance:testingGoogleSearch.TestSearching@225129c]" started-at="2021-12-07T17:14:08Z" name="verifyGoogleEmptySearch" finished-at="2021-12-07T17:14:09Z" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGoogleEmptySearch -->
-        <test-method signature="percentageSignTest(java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testingGoogleSearch.TestSearching@225129c]" started-at="2021-11-23T05:16:07Z" name="percentageSignTest" data-provider="testData" finished-at="2021-11-23T05:16:09Z" duration-ms="2714" status="PASS">
+        <test-method signature="percentageSignTest(java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testingGoogleSearch.TestSearching@225129c]" started-at="2021-12-07T17:14:09Z" name="percentageSignTest" data-provider="testData" finished-at="2021-12-07T17:14:11Z" duration-ms="2161" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- percentageSignTest -->
-        <test-method signature="afterSearchLogoTest(java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:testingGoogleSearch.TestSearching@225129c]" started-at="2021-11-23T05:16:09Z" name="afterSearchLogoTest" data-provider="testData" finished-at="2021-11-23T05:16:11Z" duration-ms="1701" status="PASS">
+        <test-method signature="afterSearchLogoTest(java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:testingGoogleSearch.TestSearching@225129c]" started-at="2021-12-07T17:14:11Z" name="afterSearchLogoTest" data-provider="testData" finished-at="2021-12-07T17:14:14Z" duration-ms="2375" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,7 +61,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSearchLogoTest -->
-        <test-method signature="verifyGoogleAutoSuggestions(java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:testingGoogleSearch.TestSearching@225129c]" started-at="2021-11-23T05:16:11Z" name="verifyGoogleAutoSuggestions" data-provider="testData" finished-at="2021-11-23T05:16:15Z" duration-ms="3955" status="PASS">
+        <test-method signature="verifyGoogleAutoSuggestions(java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:testingGoogleSearch.TestSearching@225129c]" started-at="2021-12-07T17:14:14Z" name="verifyGoogleAutoSuggestions" data-provider="testData" finished-at="2021-12-07T17:14:16Z" duration-ms="2100" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -82,7 +82,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGoogleAutoSuggestions -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testingGoogleSearch.TestSearching@225129c]" started-at="2021-11-23T05:16:15Z" name="tearDown" finished-at="2021-11-23T05:16:16Z" duration-ms="1248" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testingGoogleSearch.TestSearching@225129c]" started-at="2021-12-07T17:14:16Z" name="tearDown" finished-at="2021-12-07T17:14:16Z" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

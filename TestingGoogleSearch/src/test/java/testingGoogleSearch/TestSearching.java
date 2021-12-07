@@ -2,6 +2,7 @@ package testingGoogleSearch;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.By;
@@ -57,12 +58,13 @@ public class TestSearching {
       WebDriverWait w = new WebDriverWait(TestBase.driver, 5);
       w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul")));
       p.submit();
-	  WebElement element = TestBase.driver.findElement(By.xpath(Constants.percentageDiv));
+	  WebElement element = TestBase.driver.findElement(By.partialLinkText(Constants.percentageLink));
 	  TestBase.actions.moveToElement(element);
 	  TestBase.actions.perform();
 	  //Checking whether % signs will redirect to 404 ERROR
    	  Assert.assertEquals(TestBase.driver.
-   			  findElement(By.xpath(Constants.percentageDiv)).
+   			  //Updated  removed xpath because it's bad practice because it's dynamic
+   			  findElement(By.partialLinkText(Constants.percentageLink)).
    			  isDisplayed(),true);
   }
   
@@ -80,7 +82,8 @@ public class TestSearching {
       p.submit();
       // Checking search result
 	  Assert.assertEquals(TestBase.driver.
-			  findElement(By.xpath(Constants.googleLogo)).
+   			  //Updated  removed xpath because it's bad practice because it's dynamic
+			  findElement(By.partialLinkText(Constants.googleLink)).
 			  isDisplayed(),true);
 
   }
@@ -92,7 +95,11 @@ public class TestSearching {
   public void verifyGoogleAutoSuggestions (String firstSearch,String secondSearch,String thirdSearch) throws InterruptedException {
 	  TestBase.driver.findElement(By.name("q")).clear();
 	  TestBase.driver.findElement(By.name("q")).sendKeys(thirdSearch);
-	  Thread.sleep(2000);
+	 
+	  //Thread.sleep(2000); --> another bad practice 
+	  //implicit wait is more efficient 
+	  TestBase.driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+
 	  // Making a list of Auto suggestion to store results
 	  List<WebElement> listOfElements=TestBase.driver.findElements(By.xpath(Constants.googleSearchBoxAutoSug));
 	  for (WebElement webElement : listOfElements) {
@@ -105,7 +112,8 @@ public class TestSearching {
 	  }
 	  
 	  Assert.assertEquals(TestBase.driver.
-			  findElement(By.xpath(Constants.instabugDiv)).
+   			  //Updated  removed xpath because it's bad practice because it's dynamic
+			  findElement(By.partialLinkText(Constants.instabugLink)).
 			  isDisplayed(),true);
 
 	 }
